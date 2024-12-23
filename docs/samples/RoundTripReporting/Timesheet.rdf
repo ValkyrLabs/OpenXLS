@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbook templatepath="Timesheet.xls" debuglevel="0">
+
+<!--
+	These CellRanges reference a TimeInfo object passed into the ReportFactory.
+	
+	
+		Notes:
+-->
+
+<!-- Handle formula policies 
+	track these cell references wherever they end up...
+-->	
+	  	<formula formula_cell="Timesheet!AQ42"
+		reference_location="AC52"
+		reference_policy="2" />
+
+	  	<formula formula_cell="Timesheet!CD42"
+		reference_location="BZ52"
+		reference_policy="2" />
+	
+
+<!-- Handle the Non-Row-Inserting values first so they aren't thrown off by inserts -->
+	<cellrange 
+	range="system!E2" 
+	data_type="class java.lang.Integer" 
+	shiftexisting="false"
+	parambinding="RFQ_D_RFQ_NO|none|bean:TimeInfo" />
+
+	<cellrange 
+	range="system!E3" 
+	data_type="class java.lang.Integer" 
+	shiftexisting="false"
+	parambinding="RFQ_D_REVISION_NO|none|bean:TimeInfo" />
+
+	<cellrange 
+	range="Timesheet!I5" 
+	data_type="class java.lang.Integer" 
+	shiftexisting="false"
+	parambinding="RFQ_D_PROJECT_CODE|none|bean:TimeInfo" />
+
+		
+<!-- Named Range Start-->
+	
+	
+	<cellrange 
+		name="Process"
+		data_type="class java.lang.String"
+		shiftexisting="true">
+		
+	<!-- each of these are mapping forward to the XLS
+		 as well as back to name row/col using zero-based col 0 in the
+		 NamedRangeTimeInfo -->
+
+		<range range="Timesheet!A19" 
+			parambinding="lineitemhours|none|bean:TimeInfo"
+			/>
+		
+	
+	</cellrange>
+
+
+</workbook>

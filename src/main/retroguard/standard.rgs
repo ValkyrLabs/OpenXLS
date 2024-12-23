@@ -1,0 +1,138 @@
+.class java/lang/Object protected
+
+# License Section
+.field com/valkyrlabs/licensing/License/propname Ljava/lang/String;
+.package_map com/valkyrlabs/licensing a
+.class_map com/valkyrlabs/licensing/License a
+.field_map com/valkyrlabs/licensing/License/nump a
+.field_map com/valkyrlabs/licensing/License/numcp if
+.field_map com/valkyrlabs/licensing/License/key do
+.method_map com/valkyrlabs/licensing/License/getLicenseLevel ()I a
+.method_map com/valkyrlabs/licensing/License/isLicenseValid (I)Z a
+.method_map com/valkyrlabs/licensing/License/parseKeyFile (Ljava/io/File;)V a
+.method_map com/valkyrlabs/licensing/License/isKeyValid (I)Z if
+.method_map com/valkyrlabs/licensing/License/checkCPUs ()Z if
+.method_map com/valkyrlabs/licensing/License/isLicenseExpired ()Z do
+.method_map com/valkyrlabs/licensing/License/setKey (Ljava/lang/String;)V a
+.method_map com/valkyrlabs/licensing/License/validate (I)V do
+.method_map com/valkyrlabs/licensing/License/initProps ()V for
+.class_map com/valkyrlabs/licensing/InvalidLicenseException b
+.field_map com/valkyrlabs/licensing/InvalidLicenseException/errstr a
+.method_map com/valkyrlabs/licensing/InvalidLicenseException/getMessage ()Ljava/lang/String; getMessage
+.method_map com/valkyrlabs/licensing/InvalidLicenseException/toString ()Ljava/lang/String; toString
+
+# InstallAnywhere Custom Eval Key
+.class com/valkyrlabs/licensing/GetLicenseAction protected
+
+# UI Section
+.class com/valkyrlabs/OpenXLS/ui/* protected
+.class com/valkyrlabs/OpenXLS/ui/swing/* protected
+.class com/valkyrlabs/OpenXLS/eventui/* protected
+.class com/valkyrlabs/OpenXLS/eventui/event/* protected
+.class com/valkyrlabs/swingtools/* protected
+
+# ExtenBean API Section
+.class com/valkyrlabs/ExtenBean/* protected
+.class com/valkyrlabs/ExtenBean/swing/* protected
+
+# Encryption section
+.class com/valkyrlabs/crypto/mscrypto/* protected
+.class com/valkyrlabs/crypto/* protected
+
+# OpenXLS web API Section
+.class com/valkyrlabs/OpenXLS/web/WebWorkBook protected
+.class com/valkyrlabs/OpenXLS/web/MemeWorkBook protected
+
+# OpenXLS CellBinder API Section
+.class com/valkyrlabs/OpenXLS/binder/* protected
+
+# Extentech JNDI Section
+.class com/valkyrlabs/naming/* protected
+
+# Toolkit Section
+.class com/valkyrlabs/toolkit/* protected
+
+# security Section
+.class com/valkyrlabs/security/User protected
+.class com/valkyrlabs/security/Group protected
+.class com/valkyrlabs/security/Acl protected
+.class com/valkyrlabs/security/AclEntry protected
+.class com/valkyrlabs/security/Permission protected
+.class com/valkyrlabs/security/UserFactory protected
+
+# API Section
+.class com/valkyrlabs/OpenXLS/* protected
+.class com/valkyrlabs/OpenXLS/FormatHandle protected
+.class com/valkyrlabs/OpenXLS/bean/AXExtenBean protected
+.class com/valkyrlabs/formats/XLS/Font protected
+.class com/valkyrlabs/formats/LEO/InvalidFileException protected
+.class com/valkyrlabs/formats/XLS/Cell protected method 
+.class com/valkyrlabs/formats/XLS/Dsf
+.class com/valkyrlabs/formats/XLS/OOXMLAdapter protected	
+.class com/valkyrlabs/formats/XLS/OOXMLConstants protected	
+.class com/valkyrlabs/formats/XLS/FormatConstants protected
+.class com/valkyrlabs/formats/XLS/XLSRecord protected
+.class com/valkyrlabs/formats/XLS/CellNotFoundException protected
+.class com/valkyrlabs/formats/XLS/CellRangeConflictException protected
+.class com/valkyrlabs/formats/XLS/CellPositionConflictException protected
+.class com/valkyrlabs/formats/XLS/CellTypeMismatchException protected
+.class com/valkyrlabs/formats/XLS/PivotTableNotFoundException protected
+.class com/valkyrlabs/formats/XLS/SheetNotFoundException protected
+.class com/valkyrlabs/formats/XLS/FormulaNotFoundException protected
+.class com/valkyrlabs/formats/XLS/ChartNotFoundException protected
+.class com/valkyrlabs/formats/XLS/ImageNotFoundException protected
+.class com/valkyrlabs/formats/XLS/ValidationException protected
+.class com/valkyrlabs/formats/XLS/formulas/GenericPtg protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgErr protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgMlt protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgDiv protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgPower protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgConcat protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgNE protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgLE protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgLT protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgGE protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgGT protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgEQ protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgNE protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgAdd protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgSub protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgStr protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgNumber protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgInt protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgRef protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgArea protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgBool protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgArea3d protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgRef3d protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgArray protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgMissArg protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgMemFunc protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgFunc protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgFuncVar protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgUPlus protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgUMinus protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgParen protected
+.class com/valkyrlabs/formats/XLS/formulas/PtgAtr protected
+
+.class com/valkyrlabs/formats/XLS/charts/* protected		
+.class com/valkyrlabs/formats/XLS/FunctionNotSupportedException protected
+.class com/valkyrlabs/formats/XLS/ColumnNotFoundException protected
+.class com/valkyrlabs/formats/XLS/RowNotFoundException protected
+.class com/valkyrlabs/formats/XLS/WorkBookException protected
+.class com/valkyrlabs/formats/PDF/XLSTFormatting protected 
+.class com/valkyrlabs/licensing/License/InvalidLicenseException protected
+.field com/valkyrlabs/licensing/License/propname Ljava/lang/String
+.method com/valkyrlabs/formats/XLS/XLSRecord/getCellAddress ()Ljava/lang/String
+
+.method com/valkyrlabs/formats/XLS/XLSRecord/getCol ()I
+.method com/valkyrlabs/formats/XLS/XLSRecord/getBodyData ()[B
+
+# handle XMLPP etc.
+.class org/xmlpull/mxp1/* protected
+.class org/xmlpull/mxp1_serializer/* protected
+.class org/xmlpull/v1/* protected
+.class org/json/* protected
+
+.class com/valkyrlabs/comm/* protected
+.class com/valkyrlabs/OpenXLS/web/* protected
