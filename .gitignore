@@ -1,1 +1,15 @@
+node
+logs
+public
+.cache
 target
+generated
+node_modules
+*/assets/audio/*
+*/assets/video/*
+*/api-docs
+.vite
+.openapi-generator
+mdb_storage
+docker/mindsdb/mdb_data
+settings.xml

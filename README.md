@@ -4,227 +4,410 @@
 
 [![Stable releases in Maven Central](https://img.shields.io/maven-metadata/v/https/repo1.maven.org/maven2/ValkyrLabs/OpenXLS/maven-metadata.xml.svg)](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22ValkyrLabs/OpenXLS%22)
 
-:star::star::star: [open tasks](https://github.com/ValkyrLabs/OpenXLS/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) :star::star::star:
----
+## :star::star::star: [open tasks](https://github.com/ValkyrLabs/OpenXLS/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) :star::star::star:
 
 the open source Java Spreadsheet Library reborn for 2025
-***by Valkyr Labs Inc***
+**_by Valkyr Labs Inc_**
 
-> OpenXLS was originally born over 20 years ago in 2002 as ExtenXLS, a commercial Java Spreadsheet library at Extentech Inc. 
+> OpenXLS was originally born over 20 years ago in 2002 as ExtenXLS, a commercial Java Spreadsheet library at Extentech Inc.
 
 > Extentech Inc. was purchased by Infoteria Corp. in 2012. OpenXLS has been largely abandoned since.
 
-> In 2024, Valkyr Labs Inc (founded by Extentech CEO, John McMahon) took over development of this project. 
-
-# OpenXLS Quick Start Technical Documentation
+> In 2024, Valkyr Labs Inc (founded by Extentech CEO, John McMahon) took over development of this project.
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Quick Start Guide](#quick-start-guide)
-- [Core Concepts](#core-concepts)
-  - [WorkBook Operations](#workbook-operations)
-  - [WorkSheet Operations](#worksheet-operations)
-  - [Cell Operations](#cell-operations)
+- [Architecture Overview](#architecture-overview)
+- [Application Level Features](#application-level-features)
+- [WorkBook Operations](#workbook-operations)
+- [WorkSheet Operations](#worksheet-operations)
+- [Cell Operations](#cell-operations)
 - [Advanced Features](#advanced-features)
-  - [Performance Optimization](#performance-optimization)
-  - [Template Management](#template-management)
-  - [Charts and Visualization](#charts-and-visualization)
-- [Best Practices](#best-practices)
+- [Performance Tuning](#performance-tuning)
 - [Troubleshooting](#troubleshooting)
-- [API Reference](#api-reference)
+- [Resources](#resources)
 
 ## Introduction
 
-OpenXLS is a powerful Java API designed for reading, modifying, and creating Excel-compatible spreadsheets. Built entirely in Java, it offers seamless integration with your applications while maintaining high performance and compatibility.
+OpenXLS is a powerful, pure Java API for reading, modifying, and creating Excel-compatible spreadsheets. Written entirely in Java, it provides seamless spreadsheet manipulation capabilities without requiring native code dependencies.
 
 ### Key Features
 
-- **Pure Java Implementation**: No native dependencies or DLLs required
-- **Excel Compatibility**: Create and modify Excel-compatible files
-- **Template Support**: Use existing spreadsheets as templates
-- **Multiple Output Formats**: Generate XLS, XML, and HTML outputs
-- **High Performance**: Optimized for handling large datasets
-- **Cross-Platform**: Works on any Java-supported platform
+- Create new spreadsheets from scratch
+- Use existing spreadsheets as templates
+- Output to Excel-compatible XLS, XML, and HTML formats
+- Comprehensive formula support
+- Rich formatting capabilities
+- Chart manipulation
+- High-performance processing
+
+### Common Use Cases
+
+- Create Financial analysis reports
+- Build Formula calculation APIs
+- Extract data from legacy spreadsheets
+- Import data from uploaded spreadsheet files
+- Database-to-spreadsheet report generation
+- Transforming Excel files to XML or HTML for further processing
+- Validate and clean spreadsheets
 
 ## Getting Started
 
-### Prerequisites
+### System Requirements
 
-- Java Development Kit (JDK) 1.4 or higher
+- Java VM 1.4 or higher
 - Valid OpenXLS license
-- OpenXLS.jar in your project classpath
+- OpenXLS.jar in classpath
 
-### Installation
+### Installation Steps
 
-1. Add OpenXLS.jar to your project directory
-2. Include openxls.lic in the same directory
-3. Add OpenXLS.jar to your project's classpath
+1. Add OpenXLS dependencies to your project:
 
-```xml
-<!-- Maven dependency example -->
-<dependency>
-    <groupId>com.valkyrlabs</groupId>
-    <artifactId>openxls</artifactId>
-    <version>latest</version>
-</dependency>
-```
+   ```java
+   // Copy these files to your project directory
+   OpenXLS.jar
+   openxls.lic
+   ```
+
+2. Import the OpenXLS package:
+
+   ```java
+   import com.valkyrlabs.OpenXLS.*;
+   ```
+
+3. Verify installation:
+   ```java
+   WorkBookHandle book = new WorkBookHandle();
+   System.out.println("OpenXLS version " + book.getVersion() + " loaded.");
+   ```
+
+> **Note**: For EAR/WAR deployments, set the `com.valkyrlabs.openxls.jarloc` system property to specify the OpenXLS classes location.
 
 ### Quick Start Guide
 
-1. Import the required packages:
+1. Create a new workbook:
+
+   ```java
+   WorkBookHandle book = new WorkBookHandle();
+   ```
+
+2. Access a worksheet:
+
+   ```java
+   WorkSheetHandle sheet = book.getWorkSheet("Sheet1");
+   ```
+
+3. Manipulate cells:
+
+   ```java
+   // Add new cell
+   sheet.add("Hello OpenXLS", "A1");
+
+   // Modify existing cell
+   CellHandle cell = sheet.getCell("B2");
+   cell.setVal(42);
+   ```
+
+4. Save the workbook:
+   ```java
+   book.write("output.xls");
+   ```
+
+## Architecture Overview
+
+OpenXLS operates on four primary levels:
+
+### 1. Application Level
+
+- File format conversions (XLS, XML, HTML)
+- Template processing
+- Output management
+
+### 2. WorkBook Level
+
+- Workbook creation and modification
+- Formula calculation
+- Sheet management
+- Named range operations
+
+### 3. WorkSheet Level
+
+- Chart manipulation
+- Row and column operations
+- Protection settings
+- Header/footer management
+
+### 4. Cell Level
+
+- Value manipulation
+- Formatting
+- Formula management
+- Hyperlink creation
+
+## Application Level Features
+
+### Multiple Output Format Support
+
+#### XML Output
 
 ```java
-import com.valkyrlabs.OpenXLS.*;
+WorkBookHandle book = new WorkBookHandle("input.xls");
+book.writeXML("output.xml");
 ```
 
-2. Create or load a workbook:
+#### HTML Output
 
 ```java
-// Create new workbook
-WorkBookHandle newBook = new WorkBookHandle();
-
-// Or load existing workbook
-WorkBookHandle existingBook = new WorkBookHandle("path/to/template.xls");
+WorkBookHandle book = new WorkBookHandle("input.xls");
+book.writeHTML("output.html");
 ```
 
-3. Access worksheets:
+### Template Processing
 
 ```java
-WorkSheetHandle sheet = book.getWorkSheet("Sheet1");
+// Load template
+WorkBookHandle template = new WorkBookHandle("template.xls");
+
+// Modify template data
+WorkSheetHandle sheet = template.getWorkSheet("Sheet1");
+sheet.getCell("A1").setVal("Updated Value");
+
+// Save as new file
+template.write("processed_template.xls");
 ```
 
-4. Manipulate cells:
+## WorkBook Operations
+
+### Creating WorkBooks
 
 ```java
-// Add new cell
-sheet.add("Hello World", "A1");
-
-// Access existing cell
-CellHandle cell = sheet.getCell("B2");
-cell.setVal("New Value");
-```
-
-5. Save your work:
-
-```java
-// Write to file
-FileOutputStream fos = new FileOutputStream("output.xls");
-fos.write(book.getBytes());
-fos.close();
-```
-
-## Core Concepts
-
-### WorkBook Operations
-
-WorkBooks are the top-level containers in OpenXLS. They provide methods for managing sheets, formats, and global settings.
-
-#### Creating WorkBooks
-
-```java
-// Create empty workbook
+// Empty workbook with default sheets
 WorkBookHandle book = new WorkBookHandle();
 
-// Load from file
-WorkBookHandle template = new WorkBookHandle("/path/to/template.xls");
+// From existing file
+WorkBookHandle fromFile = new WorkBookHandle("/path/to/file.xls");
 
-// Create from byte array
-WorkBookHandle fromBytes = new WorkBookHandle(byteArray);
+// From byte array
+byte[] data = getSpreadsheetBytes();
+WorkBookHandle fromBytes = new WorkBookHandle(data);
 ```
 
-#### Setting Global Properties
+### Managing Sheets
 
 ```java
-// Set calculation mode
-book.setFormulaCalculationMode(WorkBookHandle.CALCULATE_EXPLICIT);
+// Get specific sheet
+WorkSheetHandle sheet = book.getWorkSheet("Sheet1");
 
-// Set string encoding
-book.setStringEncodingMode(WorkBookHandle.AUTOMATIC);
+// Get all sheets
+WorkSheetHandle[] sheets = book.getWorkSheets();
+
+// Create new sheet
+book.createWorkSheet("NewSheet");
+
+// Copy sheet
+book.copyWorkSheet("Sheet1", "Sheet1Copy");
+
+// Remove sheet
+book.removeSheet("Sheet1");
 ```
 
-### Performance Optimization
-
-OpenXLS provides several ways to optimize performance based on your specific needs:
-
-#### String Handling Optimization
+### Named Ranges
 
 ```java
-// For Unicode strings
-book.setStringEncodingMode(WorkBookHandle.STRING_ENCODING_UNICODE);
+// Create named range
+CellRange range = new CellRange("Sheet1!A1:B8", book);
+NameHandle namedRange = new NameHandle("MyRange", range);
 
-// For compressed strings
-book.setStringEncodingMode(WorkBookHandle.STRING_ENCODING_COMPRESSED);
-
-// For mixed content (slower but more flexible)
-book.setStringEncodingMode(WorkBookHandle.STRING_ENCODING_AUTO);
+// Access named range
+NameHandle existing = book.getNamedRange("MyRange");
+CellHandle[] cells = existing.getCells();
 ```
 
-#### Memory Management
+## WorkSheet Operations
 
-To reduce memory usage when dealing with large spreadsheets:
+### Sheet Management
 
 ```java
-// Disable blank cell conversion
-System.getProperties().put("com.valkyrlabs.openxls.convertmulblanks", "false");
+// Rename sheet
+sheet.setSheetName("NewName");
 
-// Control string duplication
-book.setDupeStringMode(WorkBookHandle.ALLOWDUPES);
+// Set sheet protection
+sheet.setProtected(true);
+
+// Set tab color
+sheet.setTabColor(FormatHandle.COLOR_BLUE);
 ```
 
-## Best Practices
-
-1. **Template Design**
-   - Use unique placeholder values in template cells
-   - Minimize empty formatted cells
-   - Keep templates in BIFF8 format (Excel 97 or later)
-
-2. **Performance**
-   - Use appropriate string encoding modes
-   - Manage blank cell conversion
-   - Batch operations when possible
-
-3. **Error Handling**
-   - Always catch specific exceptions
-   - Implement proper cleanup in finally blocks
-   - Log meaningful error messages
+### Row and Column Operations
 
 ```java
-try {
-    WorkSheetHandle sheet = book.getWorkSheet("Sheet1");
-    CellHandle cell = sheet.getCell("A1");
-    cell.setVal("New Value");
-} catch (WorkSheetNotFoundException e) {
-    logger.error("Sheet not found", e);
-} catch (CellNotFoundException e) {
-    logger.error("Cell not found", e);
-} finally {
-    // Cleanup resources
+// Insert row
+sheet.insertRow(5);
+
+// Insert column
+sheet.insertCol("C");
+
+// Hide row
+RowHandle row = sheet.getRow(3);
+row.setHidden(true);
+
+// Set column width
+ColHandle col = sheet.getCol("B");
+col.setWidth(5000);
+```
+
+### Chart Operations
+
+```java
+// Get chart
+ChartHandle chart = sheet.getChart("SalesChart");
+
+// Modify chart
+chart.setChartTitle("Updated Sales Data");
+chart.changeSeriesRange("Sheet1!A1:A12", "Sheet1!A1:A24");
+```
+
+## Cell Operations
+
+### Value Manipulation
+
+```java
+// Basic value operations
+CellHandle cell = sheet.getCell("A1");
+cell.setVal("Text Value");
+cell.setVal(42);
+cell.setVal(3.14159);
+
+// Date handling
+java.util.Date date = new java.util.Date();
+cell.setVal(date);
+```
+
+### Formatting
+
+```java
+// Create format
+FormatHandle format = new FormatHandle(book);
+format.setFont("Arial", Font.BOLD, 12);
+format.setForegroundColor(FormatHandle.COLOR_LT_BLUE);
+format.setBackgroundColor(FormatHandle.COLOR_LIGHT_YELLOW);
+format.setPattern(FormatHandle.PATTERN_SOLID);
+
+// Apply format
+cell.setFormat(format);
+
+// Currency format
+cell.setFormatPattern("$#,##0.00");
+```
+
+### Hyperlinks
+
+```java
+CellHandle cell = sheet.getCell("A1");
+cell.setVal("Click Here");
+cell.setURL("https://www.example.com");
+```
+
+## Advanced Features
+
+### Formula Support
+
+```java
+// Add formula
+sheet.add("=SUM(A1:A10)", "B1");
+
+// Modify formula
+CellHandle formula = sheet.getCell("B1");
+formula.setFormula("=AVERAGE(A1:A10)");
+
+// Calculate formulas
+book.calculateFormulas();
+```
+
+### Cell Ranges
+
+```java
+// Create range
+CellRange range = new CellRange("Sheet1!A1:D10", book);
+
+// Modify range
+CellHandle[] cells = range.getCells();
+for (CellHandle cell : cells) {
+    cell.setVal(0);
 }
 ```
 
+## Performance Tuning
+
+### String Optimization
+
+```java
+// Set string encoding mode
+book.setStringEncodingMode(WorkBookHandle.STRING_ENCODING_UNICODE);
+
+// Configure string duplication
+book.setDupeStringMode(WorkBookHandle.ALLOWDUPES);
+```
+
+### Memory Management
+
+```java
+// Disable blank cell conversion
+System.setProperty("com.valkyrlabs.openxls.convertmulblanks", "false");
+
+// Set debug level
+book.setDebugLevel(10);
+```
+
+### Best Practices
+
+- Use appropriate string encoding modes
+- Minimize blank cell formatting
+- Batch cell operations when possible
+- Reuse format handles
+- Use template files efficiently
+
 ## Troubleshooting
 
-| Issue | Solution |
-|-------|----------|
-| Missing Data | Check system logs for warnings and errors |
-| Duplicate Values | Verify string sharing settings and template unique values |
-| Performance Issues | Review string encoding mode and blank cell conversion settings |
-| Memory Problems | Enable garbage collection logging and monitor heap usage |
+### Common Issues and Solutions
+
+| Issue              | Cause             | Solution                   |
+| ------------------ | ----------------- | -------------------------- |
+| Missing Data       | Parse errors      | Check debug logs           |
+| Duplicate Values   | Shared strings    | Use `ALLOWDUPES` mode      |
+| Performance Issues | String encoding   | Optimize encoding settings |
+| Memory Problems    | Large blank areas | Disable blank conversion   |
+
+### Debug Output
+
+```java
+// Enable detailed logging
+book.setDebugLevel(50);
+
+// Write to custom log
+book.setDebugOutputStream(new FileOutputStream("openxls.log"));
+```
 
 ## Resources
 
-- [Official Documentation](https://valkyrlabs.com/docs/docs/Products/OpenXLS/openxls-quick-start)
-- [API Reference](https://api.valkyrlabs.com)
-- [Support Portal](https://support.valkyrlabs.com)
+### Support Channels
+
+- Technical Support: support@valkyrlabs.com
+- [Official Documentation](http://www.valkyrlabs.com/docs)
+
+### API References
+- [Official OpenXLS Documentation](https://valkyrlabs.com/docs/docs/Products/OpenXLS/openxls-quick-start)
+- [Java API Documentation](http://www.oracle.com/technetwork/java/javase/documentation/index.html)
+- [Excel File Format Documentation](https://learn.microsoft.com/en-us/openspecs/office_file_formats/ms-xls)
+- [Support Portal](https://valkyrlabs.com/support)
 - [GitHub Repository](https://github.com/valkyrlabs/openxls)
 
 ## License
 
-OpenXLS requires a valid license for use. Contact [Valkyr Labs](https://valkyrlabs.com) for licensing information.
+OpenXLS is licensed under the LGPL License.
 
 ---
 
-*This documentation is maintained by Valkyr Labs. For support, contact support@valkyrlabs.com*
+_This documentation is maintained by Valkyr Labs. For support, contact support@valkyrlabs.com_
