@@ -14,6 +14,7 @@
         as well as in-memory Spreadsheet functions.
     </description>
 	<url>https://github.com/valkyrlabs/OpenXLS</url>
+
 	<inceptionYear>2002</inceptionYear>
 
 	<organization>
@@ -25,14 +26,14 @@
 		<connection>scm:git:https://github.com/valkyrlabs/OpenXLS.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/valkyrlabs/OpenXLS.git</developerConnection>
 		<url>https://github.com/valkyrlabs/OpenXLS</url>
-		<tag>OpenXLS-12.0.0</tag>
+		<tag>OpenXLS-13.0.1</tag>
 	</scm>
 
 	<developers>
 		<developer>
-			<id>johnmcmahon</id>
-			<name>John McMahon</name>
-			<email>john@valkyrlabs.com</email>
+			<id>valkyrlabs</id>
+			<name>Valkyr Labs Inc</name>
+			<email>support@valkyrlabs.com</email>
 			<organization>Valkyr Labs Inc</organization>
 			<organizationUrl>https://valkyrlabs.com</organizationUrl>
 		</developer>
@@ -154,7 +155,7 @@
 					</execution>
 				</executions>
 			</plugin>
-			<!-- Maven Javadoc Plugin
+			<!-- Maven Javadoc Plugin -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
@@ -171,7 +172,6 @@
 					</execution>
 				</executions>
 			</plugin>
-			-->
 			<!-- Maven Surefire Plugin for Running Tests -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -184,7 +184,7 @@
 					<runOrder>alphabetical</runOrder>
 				</configuration>
 			</plugin>
-			<!-- Maven GPG Plugin for Signing Artifacts
+			<!-- Maven GPG Plugin for Signing Artifacts -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-gpg-plugin</artifactId>
@@ -199,7 +199,6 @@
 					</execution>
 				</executions>
 			</plugin>
-			-->
 			<!-- Maven Deploy Plugin for Deployment -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -299,6 +298,8 @@
 	</profiles>
 
 	<distributionManagement>
+
+
 		<snapshotRepository>
 			<id>ossrh</id>
 			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
