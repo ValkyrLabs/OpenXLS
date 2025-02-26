@@ -39,7 +39,7 @@ import com.valkyrlabs.toolkit.StringTool;
  * OpenXLS helper methods. <br>
  * Contains helpful methods to ease use of the OpenXLS toolkit. <br>
  * 
- *         "http://valkyrlabs.com">ValkyrLabs Inc.</a>
+ *         "http://valkyrlabs.com">Valkyr Labs Inc</a>
  * @see ByteTools
  */
 

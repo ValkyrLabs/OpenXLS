@@ -67,7 +67,7 @@ import com.valkyrlabs.toolkit.StringTool;
  * </pre>
  * </li>
  * </ol>
- *         "http://valkyrlabs.com">ValkyrLabs Inc.</a>
+ *         "http://valkyrlabs.com">Valkyr Labs Inc</a>
  */
 
 public class ValidationHandle implements Handle {

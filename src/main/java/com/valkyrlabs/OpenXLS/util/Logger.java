@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory;
 /**
  * the usual logging stuff
  *
- * @author John McMahon Copyright 2013 ValkyrLabs Inc., all rights reserved.
+ * @author John McMahon Copyright 2013 Valkyr Labs Inc, all rights reserved.
  *
  */
 public class Logger {

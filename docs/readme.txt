@@ -6,7 +6,7 @@ This document contains notes regarding this release that may not
 have been available in time to include with the release documentation.
 
 I - Release Notes
-OpenXLS 11.0 introduces few major tangible improvements over prior versions, however it does reflect new stewardship of the project from ValkyrLabs Inc.
+OpenXLS 11.0 introduces few major tangible improvements over prior versions, however it does reflect new stewardship of the project from Valkyr Labs Inc
 
 Please visit our GitHub page for the most recent updates.
 

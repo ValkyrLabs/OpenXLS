@@ -22,6 +22,18 @@
  */
 package com.valkyrlabs.OpenXLS;
 
+import java.awt.Color;
+import java.awt.font.TextAttribute;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Stack;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import static com.valkyrlabs.OpenXLS.JSONConstants.JSON_CELL_FORMATTED_VALUE;
 import static com.valkyrlabs.OpenXLS.JSONConstants.JSON_CELL_FORMULA;
 import static com.valkyrlabs.OpenXLS.JSONConstants.JSON_CELL_VALUE;
@@ -46,19 +58,6 @@ import static com.valkyrlabs.OpenXLS.JSONConstants.JSON_TEXT_ALIGN;
 import static com.valkyrlabs.OpenXLS.JSONConstants.JSON_TYPE;
 import static com.valkyrlabs.OpenXLS.JSONConstants.JSON_VALIDATION_MESSAGE;
 import static com.valkyrlabs.OpenXLS.JSONConstants.JSON_WORD_WRAP;
-
-import java.awt.Color;
-import java.awt.font.TextAttribute;
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Stack;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import com.valkyrlabs.formats.XLS.BiffRec;
 import com.valkyrlabs.formats.XLS.Blank;
 import com.valkyrlabs.formats.XLS.Boolerr;
@@ -109,7 +108,7 @@ import com.valkyrlabs.toolkit.StringTool;
  * - get a handle to any Formula for this Cell<br>
  * <br>
  * 
- * <a href="http://valkyrlabs.com">ValkyrLabs Inc.</a>
+ * <a href="http://valkyrlabs.com">Valkyr Labs Inc</a>
  * 
  * @see WorkBookHandle
  * @see WorkSheetHandle

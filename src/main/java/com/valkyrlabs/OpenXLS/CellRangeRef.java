@@ -32,7 +32,7 @@ import com.valkyrlabs.formats.XLS.XLSRecord;
  * No input validation whatsoever is performed. Any combination of values may be
  * set, whether it makes any sense or not.
  * 
- * <a href="http://valkyrlabs.com">ValkyrLabs Inc.</a>
+ * <a href="http://valkyrlabs.com">Valkyr Labs Inc</a>
  * 
  * @see DataBoundCellRange
  * @see XLSRecord

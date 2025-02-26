@@ -22,12 +22,6 @@
  */
 package com.valkyrlabs.OpenXLS;
 
-import static com.valkyrlabs.OpenXLS.JSONConstants.JSON_CELL;
-import static com.valkyrlabs.OpenXLS.JSONConstants.JSON_CELLS;
-import static com.valkyrlabs.OpenXLS.JSONConstants.JSON_CELL_VALUE;
-import static com.valkyrlabs.OpenXLS.JSONConstants.JSON_LOCATION;
-import static com.valkyrlabs.OpenXLS.JSONConstants.JSON_RANGE;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -42,6 +36,11 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import static com.valkyrlabs.OpenXLS.JSONConstants.JSON_CELL;
+import static com.valkyrlabs.OpenXLS.JSONConstants.JSON_CELLS;
+import static com.valkyrlabs.OpenXLS.JSONConstants.JSON_CELL_VALUE;
+import static com.valkyrlabs.OpenXLS.JSONConstants.JSON_LOCATION;
+import static com.valkyrlabs.OpenXLS.JSONConstants.JSON_RANGE;
 import com.valkyrlabs.formats.XLS.BiffRec;
 import com.valkyrlabs.formats.XLS.Blank;
 import com.valkyrlabs.formats.XLS.Boundsheet;
@@ -76,7 +75,7 @@ import com.valkyrlabs.toolkit.StringTool;
  * <br>
  * </blockquote>
  * 
- * <a href="http://valkyrlabs.com">ValkyrLabs Inc.</a>
+ * <a href="http://valkyrlabs.com">Valkyr Labs Inc</a>
  * 
  * @see DataBoundCellRange
  * @see XLSRecord
