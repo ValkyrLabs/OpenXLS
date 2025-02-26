@@ -3,7 +3,7 @@
 
 	<groupId>com.valkyrlabs</groupId>
 	<artifactId>OpenXLS</artifactId>
-	<version>13.0.5-SNAPSHOT</version>
+	<version>13.0.5</version>
 	<packaging>jar</packaging>
 
 	<name>OpenXLS Java Spreadsheet Library</name>
@@ -24,7 +24,8 @@
 		<connection>scm:git:https://github.com/valkyrlabs/OpenXLS.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/valkyrlabs/OpenXLS.git</developerConnection>
 		<url>https://github.com/valkyrlabs/OpenXLS</url>
-	</scm>
+	  <tag>OpenXLS-13.0.5</tag>
+  </scm>
 
 	<developers>
 		<developer>
