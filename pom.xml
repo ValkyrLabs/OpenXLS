@@ -3,7 +3,7 @@
 
 	<groupId>com.valkyrlabs</groupId>
 	<artifactId>OpenXLS</artifactId>
-	<version>13.0.5-SNAPSHOT</version>
+	<version>13.0.9</version>
 	<packaging>jar</packaging>
 
 	<name>OpenXLS Java Spreadsheet Library</name>
