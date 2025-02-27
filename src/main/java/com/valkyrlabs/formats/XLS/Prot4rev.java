@@ -22,7 +22,6 @@
  */
 package com.valkyrlabs.formats.XLS;
 
-import com.valkyrlabs.formats.LEO.InvalidFileException;
 import com.valkyrlabs.toolkit.ByteTools;
 import com.valkyrlabs.toolkit.Logger;
 
@@ -31,7 +30,7 @@ import com.valkyrlabs.toolkit.Logger;
 
    PROT4REV stores the protection state for a shared workbook
    
-   <p><pre>
+   </p><pre>
     offset  name            size    contents
     ---
     4       fRevLock        2       = 1 if the Sharing with

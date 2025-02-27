@@ -47,8 +47,7 @@ import com.valkyrlabs.toolkit.Logger;
  * The parsed expression is the array formula -- consisting of Ptgs.
  * <p>
  * You should ignore the chn field when you read the file, it must be 0 if written.
- * <p>
- * <p>
+</p><p>
  * OFFSET		NAME			SIZE		CONTENTS
  * -----
  * 4				rwFirst			2			FirstRow of the array

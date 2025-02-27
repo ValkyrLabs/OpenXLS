@@ -23,7 +23,6 @@
 package com.valkyrlabs.formats.XLS;
 
 import com.valkyrlabs.toolkit.ByteTools;
-import com.valkyrlabs.toolkit.Logger;
 
 
 /** <b>COUNTRY: 8CH</b><br>
@@ -31,7 +30,7 @@ import com.valkyrlabs.toolkit.Logger;
 	This record stores two Windows country identifiers. The first represents the user interface language of the Excel version
 	that has saved the file, and the second represents the system regional settings at the time the file was saved.
 	Record COUNTRY, BIFF3-BIFF8:
-	<p><pre>
+	</p><pre>
 	Offset Size Contents
 	0 		2 	Windows country identifier of the user interface language of Excel
 	2 		2 	Windows country identifier of the system regional settings      

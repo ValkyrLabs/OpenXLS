@@ -22,18 +22,38 @@
  */
 package com.valkyrlabs.formats.XLS.charts;
 
+import java.io.BufferedOutputStream;
+import java.io.BufferedWriter;
+import java.io.ByteArrayOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.util.AbstractList;
+import java.util.ArrayList;
+import java.util.EnumSet;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Vector;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+
 import com.valkyrlabs.OpenXLS.ChartHandle;
 import com.valkyrlabs.OpenXLS.ChartHandle.ChartOptions;
 import com.valkyrlabs.OpenXLS.ExcelTools;
 import com.valkyrlabs.OpenXLS.WorkBookHandle;
-import com.valkyrlabs.formats.XLS.*;
+import com.valkyrlabs.formats.XLS.BiffRec;
+import com.valkyrlabs.formats.XLS.ByteStreamer;
+import com.valkyrlabs.formats.XLS.Dimensions;
+import com.valkyrlabs.formats.XLS.Font;
+import com.valkyrlabs.formats.XLS.MSODrawing;
+import com.valkyrlabs.formats.XLS.Obj;
+import com.valkyrlabs.formats.XLS.Sheet;
+import com.valkyrlabs.formats.XLS.XLSConstants;
+import com.valkyrlabs.formats.XLS.XLSRecord;
 import com.valkyrlabs.toolkit.ByteTools;
 import com.valkyrlabs.toolkit.Logger;
-import org.json.JSONArray;
-import org.json.JSONException;
-
-import java.io.*;
-import java.util.*;
 
 
 /**
@@ -42,7 +62,7 @@ import java.util.*;
  * The Chart record determines the chart dimensions and
  * marks the beginning of the Chart records.
  *
- * <p><pre>
+ * </p><pre>
  * * Note that all these values are split up 2 bytes integer and 2 bytes fractional
  *
  * offset  name        size    contents
@@ -53,8 +73,7 @@ import java.util.*;
  * 16      dy          4       y-size
  *
  * </p></pre>
- * <p>
- * <p>
+</p><p>
  * <p>
  * notes on implementation:
  *

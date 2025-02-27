@@ -31,7 +31,7 @@ import com.valkyrlabs.toolkit.Logger;
  * <p>
  * Scl stores the zoom magnification for the sheet
  *
- * <p><pre>
+ * </p><pre>
  * offset  name            size    contents
  * ---
  * 4       num             2       = Numerator of the view magnification fraction (num)

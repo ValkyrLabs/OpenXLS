@@ -22,17 +22,27 @@
  */
 package com.valkyrlabs.formats.XLS;
 
-import com.valkyrlabs.toolkit.*;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+
 import com.valkyrlabs.OpenXLS.ColHandle;
 import com.valkyrlabs.OpenXLS.RowHandle;
-import com.valkyrlabs.formats.escher.*;
-
-import java.io.*;
+import com.valkyrlabs.formats.escher.MsofbtClientAnchor;
+import com.valkyrlabs.formats.escher.MsofbtClientData;
+import com.valkyrlabs.formats.escher.MsofbtDg;
+import com.valkyrlabs.formats.escher.MsofbtDgContainer;
+import com.valkyrlabs.formats.escher.MsofbtOPT;
+import com.valkyrlabs.formats.escher.MsofbtSp;
+import com.valkyrlabs.formats.escher.MsofbtSpContainer;
+import com.valkyrlabs.formats.escher.MsofbtSpgr;
+import com.valkyrlabs.formats.escher.MsofbtSpgrContainer;
+import com.valkyrlabs.toolkit.ByteTools;
+import com.valkyrlabs.toolkit.Logger;
 
 
 /** <b>Msodrawing: MS Office Drawing (ECh)</b><br>
     
-    These records contain only data.<p><pre>
+    These records contain only data.</p><pre>
     
     offset  name        size    contents
     ---    

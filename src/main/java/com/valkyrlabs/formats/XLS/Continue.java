@@ -28,7 +28,7 @@ import com.valkyrlabs.toolkit.Logger;
 /** <b>Continue: Continues Long Records (3Ch)</b><br>
 	Records longer than 8228 must be split into several records.
     
-	These records contain only data.<p><pre>
+	These records contain only data.</p><pre>
     
 	offset  name        size    contents
 	---    

@@ -22,10 +22,14 @@
  */
 package com.valkyrlabs.formats.XLS.formulas;
 
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Vector;
+
 import com.valkyrlabs.formats.XLS.ReferenceTracker;
 import com.valkyrlabs.toolkit.Logger;
-
-import java.util.*;
 
 
 /**
@@ -35,8 +39,7 @@ import java.util.*;
  * All methods are called with an array of ptg's, which are then
  * acted upon.  A Ptg of the type that makes sense (ie boolean, number)
  * is returned after each method.
- * <p>
- * <p>
+</p><p>
  * Database and List Management functions
  * Microsoft Excel includes worksheet functions that analyze data stored in lists or databases.
  * Each of these functions, referred to collectively as the Dfunctions, uses three arguments: database, field, and criteria.
@@ -68,8 +71,7 @@ import java.util.*;
  * DVARP   Calculates variance based on the entire population of selected database entries
  * <p>
  * GETPIVOTDATA   Returns data stored in a PivotTable
- * <p>
- * <p>
+</p><p>
  * ABOUT DB
  * <p>
  * All Database Formulas take 3 arguments:
@@ -92,8 +94,7 @@ import java.util.*;
  * label for specifying a condition for the column.
  * <p>
  * Make sure the criteria range does not overlap the list.
- * <p>
- * <p>
+</p><p>
  * <p>
  * TODO To change the template for this generated type comment go to
  * Window - Preferences - Java - Code Style - Code Templates

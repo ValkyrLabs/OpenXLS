@@ -23,10 +23,10 @@
 
 package com.valkyrlabs.formats.XLS;
 
-import com.valkyrlabs.toolkit.ByteTools;
-
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+
+import com.valkyrlabs.toolkit.ByteTools;
 
 /**
  * <b>CRN (005Ah)</b><br>
@@ -34,7 +34,7 @@ import java.util.ArrayList;
  * This record stores the contents of an external cell or cell range. An external cell range has one row only. If a cell range
  * spans over more than one row, several CRN records will be created.
  *
- * <p><pre>
+ * </p><pre>
  * offset  size    contents
  * ---
  * 0 		1 		Index to last column inside of the referenced sheet (lc)

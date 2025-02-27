@@ -22,6 +22,8 @@
  */
 package com.valkyrlabs.formats.XLS;
 
+import javax.print.DocFlavor.STRING;
+
 import com.valkyrlabs.toolkit.ByteTools;
 import com.valkyrlabs.toolkit.Logger;
 
@@ -30,7 +32,7 @@ import com.valkyrlabs.toolkit.Logger;
  * <b>Label: BiffRec Value, String Constant (204h)</b><br>
  * The Label record describes a cell that contains a string.
  * The String length must be in the range 000h-00ffh (0-255).
- * <p><pre>
+ * </p><pre>
  * offset  name        size    contents
  * ---
  * 4       rw          2       Row Number

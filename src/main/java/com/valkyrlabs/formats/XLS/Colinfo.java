@@ -22,16 +22,16 @@
  */
 package com.valkyrlabs.formats.XLS;
 
+import com.valkyrlabs.OpenXLS.ExcelTools;
 import com.valkyrlabs.toolkit.ByteTools;
 import com.valkyrlabs.toolkit.Logger;
-import com.valkyrlabs.OpenXLS.ExcelTools;
 
 
 /** <b>Colinfo: Column Formatting Information (7Dh)</b><br>
 
    Colinfo describes the formatting for a column range
    
-   <p><pre>
+   </p><pre>
     offset  name            size    contents
     ---------------------------------------------------------------
     4       colFirst        2       First formatted column (0)

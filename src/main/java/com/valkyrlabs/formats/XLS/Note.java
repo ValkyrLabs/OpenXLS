@@ -22,11 +22,11 @@
  */
 package com.valkyrlabs.formats.XLS;
 
+import java.util.ArrayList;
+
 import com.valkyrlabs.formats.OOXML.Text;
 import com.valkyrlabs.toolkit.ByteTools;
 import com.valkyrlabs.toolkit.Logger;
-
-import java.util.ArrayList;
 
 
 /**
@@ -36,8 +36,7 @@ import java.util.ArrayList;
  * set of records that define it:  Mso/obj/mso/Txo/Continue/Continue.  These record sets appear one after
  * another after the DIMENSIONS record and before WINDOW2.  After the associated records, all Note records
  * appear, in order.
- * <p>
- * <p>
+</p><p>
  * Kaia's notes on notes:
  * <p>
  * The Note record is the last of a set of records necessary to define each note:
@@ -76,8 +75,7 @@ import java.util.ArrayList;
  * formatting runs: This is almost finished but - of course - doc on formatting runs format doesn't appear to match reality ((:)
  * Also:
  * There needs to be a good, easy interface for setting formatting runs for a text string
- * <p>
- * <p>
+</p><p>
  * offset  name        size    contents
  * ---
  * 0 		2 Index to row

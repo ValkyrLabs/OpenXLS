@@ -34,8 +34,7 @@ import com.valkyrlabs.toolkit.ByteTools;
  * 28			numMinor	8		Value of minor increment. MUST be greater than or equal to zero. If the value of fAutoMinor is 1, this field MUST be ignored.
  * 36			numCross	8		Value where category axis crosses. If the value of fAutoCross is 1, this field MUST be ignored.
  * 44			grbit		2		Format flags
- * <p>
- * <p>
+</p><p>
  * grbit
  * 0		0x1		fAutoMin		Automatic Minimum Selected
  * 0	The value specified by numMin is used as the minimum value of the value axis.

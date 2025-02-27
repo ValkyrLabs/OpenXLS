@@ -34,7 +34,7 @@ import com.valkyrlabs.toolkit.Logger;
    Supbook records store information about a supporting
    external workbook   
    
-   <p><pre>
+   </p><pre>
    for ADD-IN SUPBOOK record (occurs before Global SUPBOOK record)
     offset  name        size    contents
     ---

@@ -29,7 +29,7 @@ import com.valkyrlabs.toolkit.Logger;
 /** <b>BOOKBOOL: Additional Workspace Information (DAh)</b><br>
 	
 		This record stores information about workspace settings
-      <p><pre>
+      </p><pre>
     offset  name            size    contents
     ---
     4       grbit          2      Option flags

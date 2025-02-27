@@ -42,8 +42,7 @@ import com.valkyrlabs.toolkit.ByteTools;
  * collection of Series records in the current chart sheet substream for which the error bar applies to.
  * <p>
  * 10	grbit	2	flags (0?)		ignored
- * <p>
- * <p>
+</p><p>
  * ORDER OF SUB-RECS:
  * [Chart3DBarShape]
  * [LineFormat, AreaFormat, PieFormat]		== lines, fill

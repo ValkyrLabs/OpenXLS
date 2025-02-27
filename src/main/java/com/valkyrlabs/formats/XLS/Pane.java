@@ -33,7 +33,7 @@ import com.valkyrlabs.toolkit.ByteTools;
  * A flag in the WINDOW2 record specifies if the panes are frozen.
  *
  *
- * <p><pre>
+ * </p><pre>
  * offset  size name		contents
  * ---
  * 0 	2	px 			Position of the vertical split (px, 0 = No vertical split):

@@ -30,7 +30,7 @@ import com.valkyrlabs.toolkit.Logger;
  * <b>GUTS: Size of Row and Column Gutters</b><br>
  * <p>
  * This record stores information about gutter settings
- * <p><pre>
+ * </p><pre>
  * offset  name            size    contents
  * ---
  * 4		dxRwGut			2		Size of the row gutter

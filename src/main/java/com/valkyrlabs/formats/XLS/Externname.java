@@ -29,7 +29,7 @@ import com.valkyrlabs.toolkit.Logger;
 
 /** <b>Externname: External Name Record (17h)</b><br>
 
-	<p><pre>
+	</p><pre>
 	for add-in formulas (1 for each add-in formula)
 	
 	   offset  name        size    contents

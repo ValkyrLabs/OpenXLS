@@ -23,11 +23,12 @@
 package com.valkyrlabs.formats.XLS;
 import java.io.Serializable;
 
+import com.valkyrlabs.OpenXLS.Cell;
 import com.valkyrlabs.toolkit.ByteTools;
 
 
 /** <b>SELECTION 0x1Dh: Describes the currently selected area of a Sheet.</b><br>
-    <p><pre>
+    </p><pre>
     offset  name        size    contents
     ---    
     4       pnn         1       Number of the pane described

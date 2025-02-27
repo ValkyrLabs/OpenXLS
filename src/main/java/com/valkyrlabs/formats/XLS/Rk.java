@@ -22,11 +22,11 @@
  */
 package com.valkyrlabs.formats.XLS;
 
+import java.text.NumberFormat;
+
 import com.valkyrlabs.OpenXLS.ExcelTools;
 import com.valkyrlabs.toolkit.ByteTools;
 import com.valkyrlabs.toolkit.Logger;
-
-import java.text.NumberFormat;
 
 
 /**
@@ -34,7 +34,7 @@ import java.text.NumberFormat;
  * This record stores an internal numeric type.  Stores data in one of four
  * RK 'types' which determine whether it is an integer or an IEEE floating point
  * equivalent.
- * <p><pre>
+ * </p><pre>
  * offset  name        size    contents
  * ---
  * 4       rw          2       Row Number

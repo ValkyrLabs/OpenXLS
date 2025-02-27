@@ -50,7 +50,7 @@ import com.valkyrlabs.toolkit.StringTool;
  * does not fit the conditions. The data validity settings of a sheet are stored in a sequential list of DV records. This list is
  * preluded by an DVAL record. If a string is empty and the default text should appear in the prompt box or error
  * box, the string must contain a single zero character (string length will be 1).
- * <p><pre>
+ * </p><pre>
  *
  *
  * Offset          Name              Size                Contents

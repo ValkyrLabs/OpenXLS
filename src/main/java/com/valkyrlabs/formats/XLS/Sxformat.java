@@ -26,7 +26,7 @@ import com.valkyrlabs.toolkit.Logger;
 
 /** SXFORMAT FBh: This record contains formatting data
 
-    <p><pre>
+    </p><pre>
     offset  name        size    contents
     ---    
     4       rlType      2       0x0 = clear

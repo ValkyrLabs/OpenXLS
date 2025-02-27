@@ -37,7 +37,7 @@ import com.valkyrlabs.toolkit.Logger;
  */
 
 /** <b>Unicode String: BIFF8 Compressed String format</b><br>
-    <p><pre>
+    </p><pre>
     offer  name        size    contents
     ---    
     0       cch         2       Count of characters in string (NOT the number of bytes)

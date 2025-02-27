@@ -44,7 +44,7 @@ package com.valkyrlabs.formats.XLS;
  * 
  * <b>Unknown Record possibly MSO related: MS Office (EFh)</b><br>
     
-    These records contain only data.<p><pre>
+    These records contain only data.</p><pre>
     
     offset  name        size    contents
     ---    

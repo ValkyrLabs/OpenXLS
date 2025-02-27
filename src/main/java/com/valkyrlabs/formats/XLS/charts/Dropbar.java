@@ -31,8 +31,7 @@ import com.valkyrlabs.toolkit.ByteTools;
  * the first dropBar record controls upBars
  * the second record controls downBars
  * Also, if these records exist, SeriesList cSer > 1
- * <p>
- * <p>
+</p><p>
  * <p>
  * pcGap (2 bytes): A signed integer that specifies the width of the gap between the up bars or the down bars. MUST be a value between 0 and 500.
  * The width of the gap in SPRCs can be calculated by the following formula:

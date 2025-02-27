@@ -22,8 +22,15 @@
  */
 package com.valkyrlabs.formats.XLS.formulas;
 
+import com.valkyrlabs.OpenXLS.Cell;
 import com.valkyrlabs.OpenXLS.ExcelTools;
-import com.valkyrlabs.formats.XLS.*;
+import com.valkyrlabs.formats.XLS.Boundsheet;
+import com.valkyrlabs.formats.XLS.Dbcell;
+import com.valkyrlabs.formats.XLS.Row;
+import com.valkyrlabs.formats.XLS.Shrfmla;
+import com.valkyrlabs.formats.XLS.WorkBook;
+import com.valkyrlabs.formats.XLS.XLSConstants;
+import com.valkyrlabs.formats.XLS.XLSRecord;
 import com.valkyrlabs.toolkit.Logger;
 
 
@@ -49,8 +56,7 @@ import com.valkyrlabs.toolkit.Logger;
  * =0 if otherwise
  * 13-0        3FFFh       col     Ordinal column offset or number
  * </pre>
- * <p>
- * <p>
+</p><p>
  * This token contains the relative reference to a cell in the same sheet.
  * It stores relative components as signed offsets and is used in shared formulas, conditional formatting, and data validity.
  *

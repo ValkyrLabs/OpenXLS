@@ -22,13 +22,13 @@
  */
 package com.valkyrlabs.formats.XLS;
 
+import java.io.Serializable;
+import java.io.UnsupportedEncodingException;
+
 import com.valkyrlabs.OpenXLS.CellRange;
 import com.valkyrlabs.OpenXLS.WorkBookHandle;
 import com.valkyrlabs.toolkit.ByteTools;
 import com.valkyrlabs.toolkit.Logger;
-
-import java.io.Serializable;
-import java.io.UnsupportedEncodingException;
 
 
 /**
@@ -36,7 +36,7 @@ import java.io.UnsupportedEncodingException;
  * <p>
  * hyperlink record
  *
- * <p><pre>
+ * </p><pre>
  * offset  name            size    contents
  * ---
  * 4       rwFirst         2       First row of link

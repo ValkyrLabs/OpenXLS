@@ -151,7 +151,7 @@ public class CellHandle implements Cell, Serializable, Handle, Comparable<CellHa
 	 * NOTE: the underlying record is not a part of the public API and may change at
 	 * any time.
 	 * 
-	 * @return Returns the underlying biff record.
+	 * @return the underlying BIFF8 record for the Cell
 	 */
 	public XLSRecord getRecord() {
 		return mycell;
@@ -163,7 +163,7 @@ public class CellHandle implements Cell, Serializable, Handle, Comparable<CellHa
 	 * any time.
 	 * 
 	 * @param XLSRecord
-	 *            rec - The BIFF record to set.
+	 *            rec the BIFF8 record to set
 	 */
 	public void setRecord(XLSRecord rec) {
 		this.mycell = rec;
@@ -215,7 +215,13 @@ public class CellHandle implements Cell, Serializable, Handle, Comparable<CellHa
 	 * Get a FormatHandle (a Format Object describing the formats for this Cell)
 	 * referenced by this CellHandle.
 	 * 
-	 * @return FormatHandle
+	 * Get a FormatHandle (a Format Object describing the formats for this Cell)
+	 * referenced by this CellHandle.
+	 * 
+	 * Get a FormatHandle (a Format Object describing the formats for this Cell)
+	 * referenced by this CellHandle.
+	 * 
+	 * This method does not return a value.
 	 * @see FormatHandle
 	 */
 	void setFormatHandle() {
@@ -227,8 +233,7 @@ public class CellHandle implements Cell, Serializable, Handle, Comparable<CellHa
 		// updateXf
 		if (this.mycell.getXfRec() != null) {
 			formatter = new FormatHandle(this.wbh, this.mycell.myxf);
-		} else {// should ever happen now?
-				// useExistingXF = false;
+		} else {
 			if (wbh == null && this.mycell.getWorkBook() != null)
 				formatter = new FormatHandle(this.mycell.getWorkBook(), -1);
 			else

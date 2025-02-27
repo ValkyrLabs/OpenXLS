@@ -23,14 +23,13 @@
 package com.valkyrlabs.formats.XLS;
 
 import com.valkyrlabs.toolkit.ByteTools;
-import com.valkyrlabs.toolkit.Logger;
 
 
 /** <b>CALCMODE: (OxD)</b><br>
 	
 	It specifies whether to calculate formulas manually,
 	automatically or automatically except for multiple table operations.
-      <p><pre>
+      </p><pre>
 	Offset Size Contents
 	0 		2 	FFFFH = automatically except for multiple table operations
 				0000H = manually

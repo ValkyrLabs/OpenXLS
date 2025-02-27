@@ -30,8 +30,7 @@ import com.valkyrlabs.toolkit.ByteTools;
  * NOTE: Bar is also base type for Pyramid, Cone and Cylinder charts;
  * actual chart type is determined also by bar shape
  * see ChartFormat.getChartType for more information
- * <p>
- * <p>
+</p><p>
  * 4	pcOverlap	2	Space between bars (default= 0)
  * values: 	-100 to -1		Size of the separation between data points
  * 0				No overlap.

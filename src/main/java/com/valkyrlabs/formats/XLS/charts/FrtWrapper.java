@@ -32,8 +32,7 @@ import com.valkyrlabs.formats.XLS.XLSRecord;
  * as a child record. As an FRT record, Excel 97 will keep the record together with
  * its associated STARTOBJECT/ENDOBJECT when round-tripping FRTs. The size of this
  * record varies depending on the record that was wrapped.
- * <p>
- * <p>
+</p><p>
  * Record Data
  * Offset		Field Name		Size		Contents
  * 4			rt				2			Record type; this matches the BIFF rt in the first two bytes of the record; =0851h

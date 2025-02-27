@@ -27,8 +27,7 @@ import com.valkyrlabs.toolkit.ByteTools;
 
 /**
  * <b>Pos: Position Information(0x104f)</b>
- * <p>
- * <p>
+</p><p>
  * for TextDisp, sets the label position as an offset from the default position
  * for PlotArea, used only for main axis + describes the plot-area bounding box; the tMainPlotArea in the SHTPROPS rec must be 1 or the POS rec is ignored
  * for Legend, describes legend pos + size
@@ -73,8 +72,7 @@ import com.valkyrlabs.toolkit.ByteTools;
  * <p>
  * attached label	MDPARENT					MDPARENT					The meaning of x1 and y1 is specified in the Type of Attached Label table. x2 and y2 MUST be ignored.
  * The size of the attached label is determined by the application.
- * <p>
- * <p>
+</p><p>
  * The PositionMode structure specifies positioning mode for position information saved in a Pos record.
  * Name			Value					   Meaning
  * MDFX			0x0000						Relative position to the chart, in points.

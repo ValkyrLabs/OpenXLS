@@ -30,7 +30,7 @@ import com.valkyrlabs.toolkit.Logger;
 
    USERSVIEWBEGIN describes the settings for a custom view for the sheet
    
-   <p><pre>
+   </p><pre>
     offset  name            size    contents
     ---
     4       guid            16      GID for custom view

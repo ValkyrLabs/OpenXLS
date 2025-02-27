@@ -30,7 +30,7 @@ import com.valkyrlabs.toolkit.ByteTools;
 
    Describe Colors in the file.
    
-   <p><pre>
+   </p><pre>
     offset  name            size    contents
     ---
     4       ccv             2       count of  colors

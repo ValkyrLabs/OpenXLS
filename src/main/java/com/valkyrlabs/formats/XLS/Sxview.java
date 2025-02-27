@@ -24,7 +24,6 @@ package com.valkyrlabs.formats.XLS;
 
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
-import java.util.List;
 
 import com.valkyrlabs.OpenXLS.ExcelTools;
 import com.valkyrlabs.formats.XLS.SxAddl.SxcView;
@@ -33,7 +32,7 @@ import com.valkyrlabs.toolkit.Logger;
 
 
 /** <b>SXVIEW B0h: This record contains top-level pivot table information.</b><br>
-    <p><pre>
+    </p><pre>
     ref (8 bytes): A Ref8U structure that specifies the PivotTable report body. For more information, see Location and Body.
     rwFirstHead (2 bytes): An RwU structure that specifies the first row of the row area. 
     			MUST be 1 if none of the axes are assigned in this PivotTable view. 

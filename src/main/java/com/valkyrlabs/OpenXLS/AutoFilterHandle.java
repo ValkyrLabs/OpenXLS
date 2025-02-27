@@ -38,8 +38,7 @@ public class AutoFilterHandle implements Handle {
 	 * For internal use only. Creates an AutoFilter Handle based on the AutoFilter
 	 * passed in
 	 * 
-	 * @param AutoFilter
-	 *            af
+	 * @param af the AutoFilter
 	 */
 	protected AutoFilterHandle(AutoFilter af) {
 		this.af = af;
@@ -61,7 +60,7 @@ public class AutoFilterHandle implements Handle {
 	 * returns the column this AutoFilter is applied to <br>
 	 * NOTE: this may not be 100% exact
 	 * 
-	 * @return in column number
+	 * @return the column number this AutoFilter is applied to
 	 */
 	public int getCol() {
 		if (this.af != null)
@@ -85,11 +84,9 @@ public class AutoFilterHandle implements Handle {
 	 * <p>
 	 * String operator may be one of: "=", ">", ">=", "<>", "<", "<="
 	 * 
-	 * @param Object
-	 *            val - value to set
-	 * @param String
-	 *            op - operator
-	 * @see setVal2
+	 * @param val the value to set
+	 * @param op the operator
+	 * @see #setVal2(Object, String, boolean)
 	 */
 	public void setVal(Object val, String op) {
 		if (af != null)
@@ -114,13 +111,10 @@ public class AutoFilterHandle implements Handle {
 	 * <p>
 	 * String operator may be one of: "=", ">", ">=", "<>", "<", "<="
 	 * 
-	 * @param Object
-	 *            val - value to set
-	 * @param String
-	 *            op - operator
-	 * @param boolean
-	 *            AND - true if two conditions should be AND'ed, false if OR'd
-	 * @see setVal2
+	 * @param val the value to set
+	 * @param op the operator
+	 * @param AND true if two conditions should be AND'ed, false if OR'd
+	 * @see #getVal2()
 	 */
 	public void setVal2(Object val, String op, boolean AND) {
 		if (af != null)
@@ -135,9 +129,9 @@ public class AutoFilterHandle implements Handle {
 	 * This will return the comparison value of the first condition for those
 	 * AutoFilters containing two conditions
 	 * 
-	 * @return String comparison value for the second condition or null if none
+	 * @return String comparison value for the first condition or null if none
 	 *         exists
-	 * @see getVal2
+	 * @see #getVal2()
 	 */
 	public String getVal() {
 		if (af != null)
@@ -155,7 +149,7 @@ public class AutoFilterHandle implements Handle {
 	 * 
 	 * @return String comparison value for the second condition or null if none
 	 *         exists
-	 * @see getVal
+	 * @see #getVal()
 	 */
 	public String getVal2() {
 		if (af != null)
@@ -167,7 +161,6 @@ public class AutoFilterHandle implements Handle {
 	 * get the operator associated with this AutoFilter <br>
 	 * NOTE: this will return the operator in the first condition if this AutoFilter
 	 * contains two conditions <br>
-	 * Use getOp2 to retrieve the second condition operator
 	 * 
 	 * @return String operator
 	 */
@@ -183,12 +176,9 @@ public class AutoFilterHandle implements Handle {
 	 * Bottom-n filters only show the bottom n values or percent in the column <br>
 	 * n can be from 1-500, or 0 to turn off Top 10 filtering
 	 * 
-	 * @param int
-	 *            n - 0-500
-	 * @param boolean
-	 *            percent - true if show Top-n percent; false to show Top-n items
-	 * @param boolean
-	 *            top10 - true if show Top-n (items or percent), false to show
+	 * @param n 0-500
+	 * @param percent true if show Top-n percent; false to show Top-n items
+	 * @param top10 true if show Top-n (items or percent), false to show
 	 *            Bottom-n (items or percent)
 	 */
 	public void setTop10(int n, boolean percent, boolean top10) {
@@ -200,7 +190,7 @@ public class AutoFilterHandle implements Handle {
 	 * returns true if this AutoFilter is set to Top-10 <br>
 	 * Top-n filters only show the Top n values or percent in the column
 	 * 
-	 * @return
+	 * @return true if this AutoFilter is set to Top-10, false otherwise
 	 */
 	public boolean isTop10() {
 		if (af != null)
@@ -225,7 +215,7 @@ public class AutoFilterHandle implements Handle {
 	}
 
 	/**
-	 * returns true if this AutoFitler is set to filter all blank rows
+	 * returns true if this AutoFilter is set to filter all blank rows
 	 * 
 	 * @return true if filter blanks, false otherwise
 	 */
@@ -236,7 +226,7 @@ public class AutoFilterHandle implements Handle {
 	}
 
 	/**
-	 * returns true if this AutoFitler is set to filter all non-blank rows
+	 * returns true if this AutoFilter is set to filter all non-blank rows
 	 * 
 	 * @return true if filter non-blanks, false otherwise
 	 */

@@ -47,8 +47,7 @@ import com.valkyrlabs.toolkit.StringTool;
  * <b>Cf:  Conditional Formatting Conditions 0x1B1</b><br>
  * <p>
  * This record stores a conditional formatting condition
- * <p>
- * <p>
+</p><p>
  * There are some restrictions in the usage of conditional formattings:
  * In the user interface it is possible to modify the font style (boldness and posture), the text colour, the underline style
  * and the strikeout style. It is not possible to change the used font, the font height, and the escapement style, though it is
@@ -56,8 +55,7 @@ import com.valkyrlabs.toolkit.StringTool;
  * It is not possible to change a border line style, but to preserve the line colour, and vice versa. Diagonal lines are not
  * supported at all. The user interface only offers thin line styles, but files containing other line styles work correctly too.
  * It is not possible to set the background pattern colour to No colour (using system window background
- * <p>
- * <p>
+</p><p>
  * <p>
  * OFFSET		NAME			SIZE		CONTENTS
  * -----

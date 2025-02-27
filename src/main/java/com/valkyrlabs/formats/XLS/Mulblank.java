@@ -22,12 +22,12 @@
  */
 package com.valkyrlabs.formats.XLS;
 
+import java.util.ArrayList;
+
 import com.valkyrlabs.OpenXLS.CellRange;
 import com.valkyrlabs.OpenXLS.ExcelTools;
 import com.valkyrlabs.toolkit.ByteTools;
 import com.valkyrlabs.toolkit.Logger;
-
-import java.util.*;
 
 
 
@@ -37,7 +37,7 @@ import java.util.*;
 
  	TODO: check compatibility with Excel2007 MAXCOLS 
 
-    <p><pre>
+    </p><pre>
     offset  name        size    contents
     ---    
     4       rw          2       Row Number

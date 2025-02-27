@@ -29,15 +29,13 @@ import com.valkyrlabs.toolkit.ByteTools;
  * <b>AxisParent: Axis Size and Location (0x1014)</b>
  * <p>
  * This record specifies properties of an axis group and the beginning of a collection of records as defined by the chart sheet substream.
- * <p>
- * <p>
+</p><p>
  * The Axis parent record stores most of the actual chart information,  what type of chart, x and y labels, etc.
  * <p>
  * 4	iax	2		axis index (0= main, 1= secondary)  This field MUST be set to zero when it is in the first AxisParent record in the chart sheet substream,
  * This field MUST be set to 1 when it is in the second AxisParent record in the chart sheet substream.
  * 16  	unused (16 bytes): Undefined and MUST be ignored.
- * <p>
- * <p>
+</p><p>
  * this doesn't appear correct given ms doc
  * 6	x	4
  * 10	y	4

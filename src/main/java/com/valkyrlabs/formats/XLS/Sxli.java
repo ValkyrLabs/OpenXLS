@@ -22,11 +22,11 @@
  */
 package com.valkyrlabs.formats.XLS;
 
-import com.valkyrlabs.toolkit.ByteTools;
-import com.valkyrlabs.toolkit.Logger;
-
 import java.util.ArrayList;
 import java.util.Arrays;
+
+import com.valkyrlabs.toolkit.ByteTools;
+import com.valkyrlabs.toolkit.Logger;
 
 
 /**
@@ -219,8 +219,7 @@ import java.util.Arrays;
  * specifies a data item index or pivot item index in the associated pivot field
  * as specified in Pivot Items. 0x7FFF This value specifies that there is no
  * pivot item and that the cell in the pivot line is blank.
- * <p>
- * <p>
+</p><p>
  * <p>
  * "http://www.valkyrlabs.com">Extentech Inc.</a>
  **/

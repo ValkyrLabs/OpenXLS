@@ -22,19 +22,19 @@
  */
 package com.valkyrlabs.formats.XLS;
 
-import com.valkyrlabs.OpenXLS.CellNotFoundException;
-import com.valkyrlabs.OpenXLS.FormatHandle;
-import com.valkyrlabs.toolkit.ByteTools;
-import com.valkyrlabs.toolkit.Logger;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 
+import com.valkyrlabs.OpenXLS.CellNotFoundException;
+import com.valkyrlabs.OpenXLS.FormatHandle;
+import com.valkyrlabs.toolkit.ByteTools;
+import com.valkyrlabs.toolkit.Logger;
+
 /**
  * <b>ROW 0x208: Describes a single row on a MS Excel Sheet.</b><br>
- * <p><pre>
+ * </p><pre>
  * offset  name        size    contents
  * ---------------------------------------------------------------
  * 0       rw          2       Row number

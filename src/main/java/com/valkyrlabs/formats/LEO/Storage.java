@@ -37,8 +37,7 @@ import com.valkyrlabs.toolkit.Logger;
 /**
  * Defines a 'file' in the LEO filesystem. contains pointers
  * to Block storages as well as the storage type etc.
- * <p>
- * <p>
+</p><p>
  * Header (128 bytes):
  * Directory Entry Name (64 bytes): This field MUST contain a Unicode string for
  * the storage or stream name encoded in UTF-16. The name MUST be terminated

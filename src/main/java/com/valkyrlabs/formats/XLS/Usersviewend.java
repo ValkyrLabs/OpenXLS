@@ -29,7 +29,7 @@ import com.valkyrlabs.toolkit.ByteTools;
 
    USERSVIEWEND marks the end of a custom view for the sheet
    
-   <p><pre>
+   </p><pre>
     offset  name            size    contents
     ---
     4       fValid          2       = 1 if the settings saved are valid

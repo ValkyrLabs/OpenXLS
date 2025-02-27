@@ -28,10 +28,8 @@ import com.valkyrlabs.toolkit.ByteTools;
 
 /**
  * <b>Boppop: Bar of Pie/Pie of Pie chart options(0x1061)</b>
- * <p>
- * <p>
- * <p>
- * <p>
+</p><p>
+</p><p>
  * <p>
  * pst (1 byte): An unsigned integer that specifies whether this chart group is a bar of pie chart group or a pie of pie chart group. MUST be a value from the following table:
  * 1= pie of pie 2= bar of pie

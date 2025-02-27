@@ -22,13 +22,14 @@
  */
 package com.valkyrlabs.formats.XLS.formulas;
 
-import com.valkyrlabs.OpenXLS.FunctionNotSupportedException;
-import com.valkyrlabs.formats.XLS.ExpressionParser;
-import com.valkyrlabs.toolkit.ByteTools;
-import com.valkyrlabs.toolkit.Logger;
-
 import java.util.ArrayList;
 import java.util.Stack;
+
+import com.valkyrlabs.OpenXLS.FunctionNotSupportedException;
+import com.valkyrlabs.formats.XLS.ExpressionParser;
+import com.valkyrlabs.formats.XLS.Formula;
+import com.valkyrlabs.toolkit.ByteTools;
+import com.valkyrlabs.toolkit.Logger;
 
 /**
  * PtgMemArea is an optimization of referenced areas.  Sweet!
@@ -37,8 +38,7 @@ import java.util.Stack;
  * PtgMemArea token is followed by several ptg reference-types plus ptgunion(s), ends with a PtgParen.
  * The cce field is the length of all of these following tokens.
  * These following Ptgs are set and parsed in .setPostRecord
- * <p>
- * <p>
+</p><p>
  * <p>
  * Like most optimizations it really sucks.  It is also one of the few Ptg's that
  * has a variable length.

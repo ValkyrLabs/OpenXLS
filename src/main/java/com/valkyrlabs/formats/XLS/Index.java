@@ -34,7 +34,7 @@ import com.valkyrlabs.toolkit.Logger;
  * <b>Index: Index Record 0x20B</b><br>
  * <p>
  * Index records are written after the Bof record for each Boundsheet.
- * <p><pre>
+ * </p><pre>
  *
  * offset  name        size    contents
  * ---

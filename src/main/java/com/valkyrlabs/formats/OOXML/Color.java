@@ -22,10 +22,11 @@
  */
 package com.valkyrlabs.formats.OOXML;
 
+import org.xmlpull.v1.XmlPullParser;
+
 import com.valkyrlabs.OpenXLS.FormatHandle;
 import com.valkyrlabs.OpenXLS.WorkBookHandle;
 import com.valkyrlabs.toolkit.Logger;
-import org.xmlpull.v1.XmlPullParser;
 
 /**
  * color (Data Bar Color)
@@ -44,8 +45,7 @@ import org.xmlpull.v1.XmlPullParser;
  * fgColor (Foreground Color)
  * Foreground color of the cell fill pattern. Cell fill patterns operate with two colors: a background color and a
  * foreground color. These combine together to make a patterned cell fill.
- * <p>
- * <p>
+</p><p>
  * bgColor (Background Color)
  * Background color of the cell fill pattern. Cell fill patterns operate with two colors: a background color and a
  * foreground color. These combine together to make a patterned cell fill.

@@ -24,19 +24,24 @@ package com.valkyrlabs.formats.XLS;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.FileOutputStream;
 import java.util.AbstractList;
 import java.util.ArrayList;
 import java.util.Iterator;
 
 import com.valkyrlabs.OpenXLS.ImageHandle;
-import com.valkyrlabs.formats.escher.*;
-import com.valkyrlabs.toolkit.*;
+import com.valkyrlabs.formats.escher.MsofbtBSE;
+import com.valkyrlabs.formats.escher.MsofbtBstoreContainer;
+import com.valkyrlabs.formats.escher.MsofbtDgg;
+import com.valkyrlabs.formats.escher.MsofbtDggContainer;
+import com.valkyrlabs.formats.escher.MsofbtOPT;
+import com.valkyrlabs.formats.escher.MsofbtSplitMenuColors;
+import com.valkyrlabs.toolkit.ByteTools;
+import com.valkyrlabs.toolkit.Logger;
 
 
 /** <b>MSODrawingGroup: MS Office Drawing Group (EBh)</b><br>
     
-    These records contain only data.<p><pre>
+    These records contain only data.</p><pre>
     
     offset  name        size    contents
     ---    

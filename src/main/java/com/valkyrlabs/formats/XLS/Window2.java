@@ -27,7 +27,7 @@ import com.valkyrlabs.toolkit.ByteTools;
 
 
 /** <b>WINDOW2 0x23E: Contains window attributes for a Sheet.</b><br>
-    <p><pre>
+    </p><pre>
     offset  name        size    contents
     ---    
     4       grbit       2       Option Flags

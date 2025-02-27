@@ -3,7 +3,7 @@
 
 	<groupId>com.valkyrlabs</groupId>
 	<artifactId>OpenXLS</artifactId>
-	<version>13.0.9</version>
+	<version>13.0.10-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>OpenXLS Java Spreadsheet Library</name>
@@ -30,7 +30,7 @@
 		<developer>
 			<id>valkyrlabs</id>
 			<name>Valkyr Labs Inc</name>
-			<email>john@valkyrlabs.com</email>
+			<email>support@valkyrlabs.com</email>
 			<organization>Valkyr Labs Inc</organization>
 			<organizationUrl>https://valkyrlabs.com</organizationUrl>
 		</developer>
@@ -159,6 +159,7 @@
 				<version>3.11.2</version>
 				<configuration>
 					<failOnError>false</failOnError>
+					
 				</configuration>
 				<executions>
 					<execution>
@@ -196,6 +197,7 @@
 					</execution>
 				</executions>
 			</plugin>
+			
 			<!-- Maven Deploy Plugin for Deployment -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -211,6 +213,7 @@
 					</execution>
 				</executions>
 			</plugin>
+			
 		</plugins>
 		<resources>
 			<resource>

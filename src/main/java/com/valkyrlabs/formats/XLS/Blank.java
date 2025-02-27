@@ -30,7 +30,7 @@ import com.valkyrlabs.toolkit.ByteTools;
  * <p>
  * Blank records define a blank cell.  The rw field defines row number (0 based)
  * and the col field defines column number.
- * <p><pre>
+ * </p><pre>
  * offset  name        size    contents
  * ---
  * 4       rw          2           Row

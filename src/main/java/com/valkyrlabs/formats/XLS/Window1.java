@@ -26,7 +26,7 @@ import com.valkyrlabs.toolkit.ByteTools;
 
 
 /** <b>WINDOW1 0x3D: Contains window attributes for a Workbook.</b><br>
-    <p><pre>
+    </p><pre>
     offset  name        size    contents
     ---    
     4       xWn         2       Horizontal Position of the window

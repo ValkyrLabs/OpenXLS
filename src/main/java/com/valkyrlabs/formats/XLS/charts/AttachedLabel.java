@@ -35,8 +35,7 @@ import com.valkyrlabs.toolkit.ByteTools;
 
 /**
  * <b> AttachedLabel: Series Data/Value Labels (0x100c) </b>
- * <p>
- * <p>
+</p><p>
  * bit
  * 0	= show value label -- a bit that specifies whether the value, or the vertical value on bubble or scatter chart groups, is displayed in the data label.
  * 1   = show value as percentage -- (must be 0 for non-pie)

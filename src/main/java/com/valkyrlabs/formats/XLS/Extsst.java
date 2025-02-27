@@ -30,7 +30,7 @@ import com.valkyrlabs.toolkit.Logger;
 
 /** <b>Extsst: Extended Shared String Table (FFh)</b><br>
      hashtable that optimizes external copy operations.
-    <p><pre>
+    </p><pre>
     offset  name        size    contents
     ---    
     4       Dsst        2       Number of strings in each bucket

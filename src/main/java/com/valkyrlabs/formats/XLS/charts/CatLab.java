@@ -40,8 +40,7 @@ import com.valkyrlabs.toolkit.ByteTools;
  * Bits	Mask	Flag Name			Contents
  * 0		0001h	fAutoCatLabelReal	=1 if the category label skip is automatic =0 otherwise
  * 15-1	FFFEh	(unused)			Reserved; must be zero
- * <p>
- * <p>
+</p><p>
  * wOffset (2 bytes): An unsigned integer that specifies the distance between the axis and axis label.
  * It contains the offset as a percentage of the default distance. The default distance is equal to 1/3 the height of the font calculated in pixels.
  * MUST be a value greater than or equal to 0 (0%) and less than or equal to 1000 (1000%).

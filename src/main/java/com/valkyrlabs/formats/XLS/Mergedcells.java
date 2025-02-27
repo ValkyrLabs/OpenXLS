@@ -39,7 +39,7 @@ import com.valkyrlabs.toolkit.Logger;
 
    Merged Cells record
    
-   <p><pre>
+   </p><pre>
 	offset  name            size    contents
 	---
 	0	 					var		BiffRec range addresses

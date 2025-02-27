@@ -22,12 +22,13 @@
  */
 package com.valkyrlabs.formats.XLS;
 
-import com.valkyrlabs.toolkit.ByteTools;
-import com.valkyrlabs.toolkit.Logger;
-import org.xmlpull.v1.XmlPullParser;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import org.xmlpull.v1.XmlPullParser;
+
+import com.valkyrlabs.toolkit.ByteTools;
+import com.valkyrlabs.toolkit.Logger;
 
 /**
  * <b>Dval: Data Validity Settings (01B2h)</b><br>
@@ -42,8 +43,7 @@ import java.util.List;
  * 10              inObj               4                       Object identifier of the drop down arrow object for a list box , if a list box is visible at
  * the current cursor position, FFFFFFFFH otherwise
  * 14                idvMac            4                      Number of following DV records
- * <p>
- * <p>
+</p><p>
  * wDviFlags
  * Bit         Mask              Name            Contents
  * ------------------------------------------------------

@@ -25,7 +25,7 @@ package com.valkyrlabs.formats.XLS;
 
 /** <b>Msodrawingselection: MS Office Drawing Selection (EDh)</b><br>
     
-    These records contain only data.<p><pre>
+    These records contain only data.</p><pre>
     
     offset  name        size    contents
     ---    

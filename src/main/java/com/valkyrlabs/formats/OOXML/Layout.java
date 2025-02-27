@@ -22,15 +22,15 @@
  */
 package com.valkyrlabs.formats.OOXML;
 
-import com.valkyrlabs.toolkit.Logger;
+import java.util.Stack;
+
 import org.xmlpull.v1.XmlPullParser;
 
-import java.util.Stack;
+import com.valkyrlabs.toolkit.Logger;
 
 /**
  * chart layout element
- * <p>
- * <p>
+</p><p>
  * parent:  plotarea, title ...
  * children:  manualLayout
  */

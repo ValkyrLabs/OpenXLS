@@ -27,7 +27,7 @@ import com.valkyrlabs.toolkit.Logger;
 
 
 /** <b>WRITEACCESS 0x5C: Contains name of Excel installed user.</b><br>
-    <p><pre>
+    </p><pre>
     offset  name        size    contents
     ---    
     4       stName      112     User Name as unformatted Unicodestring

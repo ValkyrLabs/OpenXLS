@@ -29,7 +29,7 @@ import com.valkyrlabs.toolkit.ByteTools;
     Describes a cell that contains a constant Boolean or error
     value.
     
-    <p><pre>
+    </p><pre>
     offset  name        size    contents
     ---    
     4       rw          2       Row

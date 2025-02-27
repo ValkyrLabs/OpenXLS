@@ -30,8 +30,7 @@ import com.valkyrlabs.toolkit.ByteTools;
  * <p>
  * Offset	Name	Size	Contents
  * 4		grbit	2		Option flags (see following table)
- * <p>
- * <p>
+</p><p>
  * The grbit field contains the following flags.
  * <p>
  * Offset	Bits	Mask	Name			Contents

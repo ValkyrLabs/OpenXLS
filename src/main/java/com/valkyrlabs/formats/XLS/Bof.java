@@ -32,7 +32,7 @@ import com.valkyrlabs.toolkit.Logger;
  *
  * Marks the beginning of an XLS file Stream including Boundsheets
  *
- * <p><pre>
+ * </p><pre>
  * offset  name        size    contents
  * ---
  * 0       vers        1       version:

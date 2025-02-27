@@ -22,16 +22,16 @@
  */
 package com.valkyrlabs.formats.XLS;
 
+import com.valkyrlabs.OpenXLS.ExcelTools;
 import com.valkyrlabs.toolkit.ByteTools;
 import com.valkyrlabs.toolkit.Logger;
-import com.valkyrlabs.OpenXLS.ExcelTools;
 
 
 /** <b>NUMBER: BiffRec Value, Floating-Point Number (203h)</b><br>
     This record stores an internal numeric type.  Stores data in one of four
     RK 'types' which determine whether it is an integer or an IEEE floating point
     equivalent.
-    <p><pre>
+    </p><pre>
     offset  name        size    contents
     ---    
     4       rw          2       Row Number

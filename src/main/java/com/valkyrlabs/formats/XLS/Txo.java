@@ -22,11 +22,11 @@
  */
 package com.valkyrlabs.formats.XLS;
 
-import com.valkyrlabs.toolkit.ByteTools;
-import com.valkyrlabs.toolkit.Logger;
-
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+
+import com.valkyrlabs.toolkit.ByteTools;
+import com.valkyrlabs.toolkit.Logger;
 
 
 /**
@@ -37,7 +37,7 @@ import java.util.ArrayList;
  * <p>
  * If there is no text, the two CONTINUE records are absent.
  *
- * <p><pre>
+ * </p><pre>
  * offset  name        size    contents
  * ---
  * 4       grbit       2       Option flags.  See table.

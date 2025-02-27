@@ -30,7 +30,7 @@ import com.valkyrlabs.toolkit.Logger;
 
    Headerrec describes the header printed on every page
    
-   <p><pre>
+   </p><pre>
     offset  name            size    contents
     ---
     4       cch             1       Length of the Header String

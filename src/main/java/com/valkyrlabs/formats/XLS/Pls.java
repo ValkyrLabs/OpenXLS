@@ -28,7 +28,7 @@ package com.valkyrlabs.formats.XLS;
  * <p>
  * PLS saves printer settings and driver info
  *
- * <p><pre>
+ * </p><pre>
  *
  * offset  name            size    contents
  * ---

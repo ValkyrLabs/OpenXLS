@@ -30,7 +30,7 @@ import com.valkyrlabs.toolkit.ByteTools;
 /**
  * <b>XCT  CRN Count (0059h)</b><br>
  *
- <p><pre>
+ </p><pre>
  * 	This record stores the number of immediately following Crn records. 
  * 	These records are used to store the cell contents of external references.
  *

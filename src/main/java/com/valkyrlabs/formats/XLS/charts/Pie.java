@@ -32,8 +32,7 @@ import com.valkyrlabs.toolkit.ByteTools;
  * 4	anStart		2		Angle of the first pie slice expressed in degrees.  Must be <= 360
  * 6	pcDonut		2		0= true pie chart, non-zero= size of center hole in a donut chart, as a percentage
  * 8	grbit		2		Option Flags
- * <p>
- * <p>
+</p><p>
  * grbit:
  * 0	0x1		fHasShadow		1= has shadow
  * 1	0x2		fShowLdrLines	1= show leader lines to data labels

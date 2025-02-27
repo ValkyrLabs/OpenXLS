@@ -39,8 +39,7 @@ import com.valkyrlabs.toolkit.Logger;
  * <p>
  * 4 reserved 16 0 20 grbit 2 format flags 22 icrt 2 drawing order (0= bottom of
  * z-order)
- * <p>
- * <p>
+</p><p>
  * 16 bytes- reserved must be 0
  * fVaried (1 bit): A bit that specifies whether the color for each data point and
  * the color and type for each data marker vary. If the chart group has multiple series or the chart group has one
@@ -52,8 +51,7 @@ import com.valkyrlabs.toolkit.Logger;
  * icrt (2 bytes): An unsigned integer that specifies the drawing order of the chart group relative to the other chart
  * groups, where 0x0000 is the bottom of the z-order.
  * This value MUST be unique for each instance of this record and MUST be less than or equal to 0x0009.
- * <p>
- * <p>
+</p><p>
  * ORDER OF SUBRECS:
  * Bar/Pie/Scatter ...
  * ChartFormatLink

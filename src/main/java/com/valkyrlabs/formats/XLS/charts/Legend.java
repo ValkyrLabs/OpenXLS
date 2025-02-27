@@ -22,18 +22,17 @@
  */
 package com.valkyrlabs.formats.XLS.charts;
 
+import java.util.HashMap;
+
 import com.valkyrlabs.formats.XLS.Font;
 import com.valkyrlabs.formats.XLS.MSODrawing;
 import com.valkyrlabs.formats.XLS.XLSRecord;
 import com.valkyrlabs.toolkit.ByteTools;
 import com.valkyrlabs.toolkit.StringTool;
 
-import java.util.HashMap;
-
 /**
  * <b>Legend: Legend Type and Position (0x1015)</b>
- * <p>
- * <p>
+</p><p>
  * 4	x		4		x position of upper-left corner -- MUST be ignored and the x1 field from the following Pos record MUST be used instead.
  * 8	y		4		y position of upper-left corner -- MUST be ignored and the y1 field from the following Pos record MUST be used instead.
  * 12	dx		4		width in SPRC -- MUST be ignored and the x2 field from the following Pos record MUST be used instead.

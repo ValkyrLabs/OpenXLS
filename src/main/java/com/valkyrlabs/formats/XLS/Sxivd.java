@@ -33,7 +33,7 @@ import com.valkyrlabs.toolkit.Logger;
     
     There are at most two of these recs per Table -- one for rows, one for cols.
 
-    <p><pre>
+    </p><pre>
     offset  name        size    contents
     ---    
     4       rgisxvd     var     Array of 2 byte field ids (row or col)

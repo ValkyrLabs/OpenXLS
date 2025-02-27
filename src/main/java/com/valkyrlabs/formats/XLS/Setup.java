@@ -28,7 +28,7 @@ import com.valkyrlabs.toolkit.ByteTools;
 
 
 /** <b>SETUP 0xA1h: Describes the settings in the Page Setup (Printing) dialog.</b><br>
-    <p><pre>
+    </p><pre>
     offset  name        size    contents
     ---    
     4       iPaperSize	2       Paper size

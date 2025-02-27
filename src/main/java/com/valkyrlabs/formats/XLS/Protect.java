@@ -30,7 +30,7 @@ import com.valkyrlabs.toolkit.Logger;
 
    PROTECT stores the protection state for a sheet or workbook
    
-   <p><pre>
+   </p><pre>
     offset  name            size    contents
     ---
     4       fLock           2       = 1 if the sheet or book is protected

@@ -43,8 +43,7 @@ import com.valkyrlabs.toolkit.Logger;
 
 /**
  * Provide a translation layer between the block vector and a byte array.
- * <p>
- * <p>
+</p><p>
  * A record (Storage, XLSRecord) can retrieve bytes from Scattered blocks
  * transparently.
  * <p>

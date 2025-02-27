@@ -27,7 +27,7 @@ import com.valkyrlabs.toolkit.Logger;
 
 
 /** <b>Dimensions 0x200: Describes the max BiffRec dimensions of a Sheet.</b><br>
-    <p><pre>
+    </p><pre>
     offset  name        size    contents
     ---    
     4       rowMic      4       First defined Row
