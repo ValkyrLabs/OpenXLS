@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.valkyrlabs</groupId>
@@ -24,14 +26,13 @@
 		<connection>scm:git:https://github.com/valkyrlabs/OpenXLS.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/valkyrlabs/OpenXLS.git</developerConnection>
 		<url>https://github.com/valkyrlabs/OpenXLS</url>
-	  <tag>OpenXLS-13.0.11</tag>
-  </scm>
+	</scm>
 
 	<developers>
 		<developer>
 			<id>valkyrlabs</id>
 			<name>Valkyr Labs Inc</name>
-			<email>john.mcmahon@outlook.com</email>
+			<email>suppport@valkyrlabs.com</email>
 			<organization>Valkyr Labs Inc</organization>
 			<organizationUrl>https://valkyrlabs.com</organizationUrl>
 		</developer>
@@ -160,7 +161,7 @@
 				<version>3.11.2</version>
 				<configuration>
 					<failOnError>false</failOnError>
-					
+
 				</configuration>
 				<executions>
 					<execution>
@@ -198,8 +199,20 @@
 					</execution>
 				</executions>
 			</plugin>
-			
-			<!-- Maven Deploy Plugin for Deployment -->
+
+
+			<plugin>
+				<groupId>org.sonatype.central</groupId>
+				<artifactId>central-publishing-maven-plugin</artifactId>
+				<version>0.7.0</version>
+				<extensions>true</extensions>
+				<configuration>
+					<publishingServerId>central</publishingServerId>
+				</configuration>
+			</plugin>
+
+
+			<!-- Maven Deploy Plugin for Deployment 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-deploy-plugin</artifactId>
@@ -214,7 +227,8 @@
 					</execution>
 				</executions>
 			</plugin>
-			
+			-->
+
 		</plugins>
 		<resources>
 			<resource>
@@ -268,6 +282,7 @@
 				</plugins>
 			</build>
 		</profile>
+
 		<!-- Profile for signing artifacts during release -->
 		<profile>
 			<id>release-sign-artifacts</id>
@@ -298,16 +313,16 @@
 		</profile>
 	</profiles>
 
+<!--
 	<distributionManagement>
-
-
 		<snapshotRepository>
 			<id>ossrh</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
 		</snapshotRepository>
 		<repository>
 			<id>ossrh</id>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+			<url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 		</repository>
 	</distributionManagement>
+	-->
 </project>
