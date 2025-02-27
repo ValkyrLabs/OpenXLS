@@ -3,7 +3,7 @@
 
 	<groupId>com.valkyrlabs</groupId>
 	<artifactId>OpenXLS</artifactId>
-	<version>13.0.15-SNAPSHOT</version>
+	<version>13.0.16-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>OpenXLS Java Spreadsheet Library</name>
@@ -31,7 +31,7 @@
 		<developer>
 			<id>valkyrlabs</id>
 			<name>Valkyr Labs Inc</name>
-			<email>support@valkyrlabs.com</email>
+			<email>john.mcmahon@outlook.com</email>
 			<organization>Valkyr Labs Inc</organization>
 			<organizationUrl>https://valkyrlabs.com</organizationUrl>
 		</developer>
