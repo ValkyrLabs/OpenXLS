@@ -1,8 +1,8 @@
-# OpenXLS 12
+# OpenXLS 13
 
 [![Java CI with Maven](https://github.com/ValkyrLabs/OpenXLS/actions/workflows/maven.yml/badge.svg)](https://github.com/ValkyrLabs/OpenXLS/actions/workflows/maven.yml)
 
-[![Stable releases in Maven Central](https://img.shields.io/maven-metadata/v/https/repo1.maven.org/maven2/ValkyrLabs/OpenXLS/maven-metadata.xml.svg)](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.valkyrlabs/OpenXLS%22)
+[![Stable releases in Maven Central](https://img.shields.io/maven-metadata/v/https/repo1.maven.org/maven2/ValkyrLabs/OpenXLS/maven-metadata.xml.svg)](http://search.maven.org/#search%7Cgav%7C1com.valkyrlabs/OpenXLS%22)
 
 ## :star::star::star: [open tasks](https://github.com/ValkyrLabs/OpenXLS/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) :star::star::star:
 
